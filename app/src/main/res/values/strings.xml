@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Drawer</string>
+    <string name="open">Open</string>
+    <string name="close">close</string>
+    <string name="user_name">Renz John Fronda</string>
+    <string name="user_position">Mobile Dev</string>
+    <string name="password_hint">Password Hint</string>
+    <string name="email_hint">Email Hint</string>
+</resources>

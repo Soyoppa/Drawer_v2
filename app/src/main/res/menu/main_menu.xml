@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_calculator"
+        android:icon="@drawable/ic_calculator"
+        android:iconTint="#77161F25"
+        android:title="Calculator" />
+    <item android:title="Movies"
+          android:icon="@drawable/ic_popcorn"
+          android:id="@+id/action_movies"/>
+    <item android:title="Logout"
+          android:icon="@drawable/ic_logout"
+          android:id="@+id/action_logout"/>
+
+</menu>

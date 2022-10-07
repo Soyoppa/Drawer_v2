@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F5051">
+
+    <ImageView
+        android:id="@+id/ivShowPoster"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:background="#D2E91E3C"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gagamboy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvShowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Movie Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#CDC3C3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivShowPoster" />
+
+    <RatingBar
+        android:id="@+id/rbShowRating"
+        style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:outlineAmbientShadowColor="#F8A692"
+        android:progressTint="#FFEB3B"
+        app:layout_constraintStart_toStartOf="@+id/tvShowTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowTitle" />
+
+    <View
+        android:id="@+id/view"
+
+        android:layout_width="415dp"
+        android:layout_height="200dp"
+        android:background="#08000000"
+        android:backgroundTint="#7CFFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvShowPlot"
+        app:layout_constraintEnd_toEndOf="@+id/tvShowPlot"
+        app:layout_constraintStart_toStartOf="@+id/tvShowPlot"
+        app:layout_constraintTop_toTopOf="@+id/tvShowPlot" />
+
+    <TextView
+        android:id="@+id/tvShowPlot"
+        android:layout_width="368dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="14sp"
+        android:scrollbars="vertical"
+        android:text="Plot / Cast"
+        android:textAlignment="textStart"
+        android:textColor="#CDC3C3"
+        app:layout_constraintStart_toStartOf="@+id/tvPlotbutton"
+        app:layout_constraintTop_toBottomOf="@+id/tvCastButton" />
+
+    <TextView
+        android:id="@+id/tvPlotbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Plot"
+        android:textColor="#CDC3C3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rbShowRating"
+        app:layout_constraintTop_toBottomOf="@+id/rbShowRating" />
+
+    <TextView
+        android:id="@+id/tvCastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Cast"
+        android:textColor="#CDC3C3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvPlotbutton"
+        app:layout_constraintTop_toBottomOf="@+id/rbShowRating" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="3dp"
+        android:text="(year)"
+        android:textColor="#CDC3C3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvShowTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvShowTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
